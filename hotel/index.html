@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-3" href="#">JR HOTEL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto fs-5">
+          <li class="nav-item"><a class="nav-link active" href="#slide">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rooms">Kamar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#facilities">Fasilitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slide Section -->
+  <section id="slide" aria-label="Hotel Slide Carousel">
+    <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded-4 shadow">
+        <div class="carousel-item active">
+          <img src="img/1.jpeg" class="d-block w-100" alt="Luxury Hotel Lobby" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>JR Hotel</h3>
+            <p>Welcome to our elegant design.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/single.jpg" class="d-block w-100" alt="Beautiful Hotel Room" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>Modern Rooms</h3>
+            <p>Experience ultimate comfort in our well-equipped rooms.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Kolam.jpeg" class="d-block w-100" alt="Hotel Pool" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h3>Relaxing Pool Area</h3>
+            <p>Enjoy your leisure time in our sparkling pool.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="bg-white">
+    <div class="container px-5">
+      <h2 class="mb-5 text-center fw-bold">Room</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="img/delux.jpeg" class="card-img-top room-card-img rounded-top" alt="Deluxe Room">
+            <div class="card-body">
+              <h5 class="card-title">Twin Room</h5>
+              <p class="card-text text-muted">Twin Bed, kamar mandi dalam, dan pemandangan kota.</p>
+              <a href="#contact" class="btn btn-dark w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="img/single.jpg" class="card-img-top room-card-img rounded-top" alt="Executive Suite">
+            <div class="card-body">
+              <h5 class="card-title">Executive Suite</h5>
+              <p class="card-text text-muted">Suite premium dengan lounge terpisah, balkon, dan fasilitas mewah.</p>
+              <a href="#contact" class="btn btn-dark w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="img/twin.jpeg" class="card-img-top room-card-img rounded-top" alt="Standard Room" />
+            <div class="card-body">
+              <h5 class="card-title">Standard Room</h5>
+              <p class="card-text text-muted">Kamar yang nyaman dengan semua fasilitas penting dan tempat tidur yang
+                nyaman.</p>
+              <a href="#contact" class="btn btn-dark w-100 mt-3">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="py-5 bg-light">
+    <div class="container px-5 text-center">
+      <h2 class="mb-5 fw-bold">Fasilitas</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <i class="bi bi-wifi facility-icon" aria-hidden="true"></i>
+          <h5>Wifi Gratis</h5>
+          <p class="text-muted small">HInternet berkecepatan tinggi tersedia di seluruh hotel.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-bicycle facility-icon" aria-hidden="true"></i>
+          <h5>Rental Sepeda</h5>
+          <p class="text-muted small">Jelajahi kota dengan layanan penyewaan sepeda kami yang nyaman.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-cup-hot facility-icon" aria-hidden="true"></i>
+          <h5>Toko Kopi</h5>
+          <p class="text-muted small">Nikmati kopi segar dan makanan ringan di kafe internal kami.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-water facility-icon" aria-hidden="true"></i>
+          <h5>Kolam Renang</h5>
+          <p class="text-muted small">Bersantailah dan rileks di area kolam renang luar ruangan kami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Section -->
+  <section id="restaurant" class="bg-white">
+    <div class="container px-5">
+      <h2 class="mb-5 text-center fw-bold">Restoran</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="img/restoran.jpeg" alt="Restaurant Interior" class="rounded shadow w-100" />
+        </div>
+        <div class="col-md-6">
+          <p class="lead">
+            Nikmati pengalaman bersantap lezat di restoran internal kami, yang menawarkan berbagai masakan internasional
+            yang diolah dengan bahan-bahan lokal yang segar. Baik Anda ingin bersantap santai atau bersantap mewah,
+            restoran kami melayani semua selera.
+          </p>
+          <p>
+            Buka setiap hari mulai pukul 7 pagi hingga 11 malam, restoran ini menghadirkan suasana elegan, layanan
+            sempurna, dan daftar anggur yang lengkap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="restaurant" class="bg-white">
+    <div class="container px-5">
+      <h2 class="mb-5 text-center fw-bold">About Hotel</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="img/1.jpeg" alt="About Hotel" class="rounded shadow w-100" />
+        </div>
+        <div class="col-md-6">
+          <p class="lead">
+            Dengan keunggulan selama lebih dari 20 tahun, JR Hotel menawarkan kombinasi unik antara kemewahan,
+            kenyamanan, dan layanan personal di jantung kota. Akomodasi kami yang elegan, fasilitas kelas dunia, dan tim
+            yang berdedikasi memastikan pengalaman yang tak terlupakan.
+          </p>
+          <p>
+            Baik bepergian untuk bisnis maupun liburan, hotel kami adalah rumah kedua Anda yang sempurna.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Lokasi Code-->
+  <section id="location" class="py-5 bg-light">
+    <div class="container px-5">
+      <h2 class="mb-5 text-center fw-bold">Lokasi</h2>
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-md-6">
+          <p class="lead">
+            Berlokasi strategis di jantung kota, JR Hotel menawarkan akses mudah ke berbagai tempat wisata utama, area
+            perbelanjaan, dan pusat transportasi. Baik Anda datang untuk urusan bisnis maupun liburan, lokasi utama kami
+            membuat semuanya mudah dijangkau.
+          </p>
+          <ul class="list-unstyled text-muted">
+            <li><strong>Address:</strong> Bengkong Mahkota, Batam</li>
+            <li><strong>Phone:</strong> +62 812345678</li>
+            <li><strong>Email:</strong> contact@jrhotel.com</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d428.47375020073866!2d104.03076720297459!3d1.1573105797565744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1747059128225!5m2!1sid!2sid"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-5">
+    <div class="container px-5">
+      <h2 class="text-center fw-bold mb-5">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="form-label fw-semibold">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 fw-semibold">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; Jonathan Rafael Sianturi</div>
+    <div>
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
